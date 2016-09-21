@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html,body{
+				height: 100%;
+				background: #A2AEC7;
+			}
+			.all{
+				width: 1200px;
+				overflow: hidden;
+				position: relative;
+				float: right;
+				margin: 20px;
+				background: #fafafa;
+			}
+			.btns{
+				position: absolute;
+				left: 80px;
+				top:20px;
+				overflow: hidden;
+				z-index: 999;
+				list-style: none;
+				width: 660px;
+			}
+			.btns li{
+				width: 60px;
+				height: 24px;
+				line-height: 24px;
+				font-size: 16px;
+				text-align: center;
+				padding-left: 15px;
+				float: left;
+				cursor: pointer;
+				background: url(img/off.png) no-repeat 2px center;
+			}
+			li.active{
+				background: url(img/on.png) no-repeat 2px center;
+			}
+			.data_box{
+				width: 760px;
+				height: 350px;
+				float: left;
+			}
+			.data_box1{
+				width: 360px;
+				height: 350px;
+				float: right;
+			}
+			.boxs{
+				width: 100%;
+				overflow: hidden;
+				display: flex;
+			}
+			.box{
+				flex: 1;
+				background: #66ccff;
+				border: 1px solid #ccc;
+				height: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<ul class="btns">
+				<li class="active">成都</li>
+				<li class="active">自贡</li>
+				<li class="active">泸州</li>
+				<li class="active">德阳</li>
+				<li class="active">绵阳</li>
+				<li class="active">广元</li>
+				<li class="active">遂宁</li>
+				<li class="active">内江</li>
+				<li class="active">乐山</li>
+				<li class="active">南充</li>
+				<li class="active">宜宾</li>
+				<li class="active">广安</li>
+				<li class="active">达州</li>
+				<li class="active">眉山</li>
+				<li class="active">雅安</li>
+				<li class="active">巴中</li>
+				<li class="active">资阳</li>
+				<li class="active">阿坝</li>
+				<li class="active">甘孜</li>
+				<li class="active">凉山</li>
+				<li class="active">攀枝花</li>
+				<li class="active">四川</li>
+			</ul>
+			<div id="echarts_box" class="data_box">
+	
+			</div>
+			<div id="echarts_box1" class="data_box1">
+				
+			</div>
+			<div class="boxs">
+				<div class="box">
+				
+				</div>
+				<div class="box">
+					
+				</div>
+				<div class="box">
+					
+				</div>
+			</div>
+			
+		</div>
+		<script src="http://cdn.bootcss.com/echarts/3.2.3/echarts.min.js"></script>
+		<script src="js/jquery-1.12.4-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
